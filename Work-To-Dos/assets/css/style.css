@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+.cart-header .cart-title {
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.cart-header .cart-content {
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.cart-header .cart-content p:nth-child(1) {
+    margin: 15px;
+    color: yellow;
+}
+
+.cart-header .cart-content p:nth-child(2) {
+    margin: 15px;
+    color: chartreuse;
+}
+
+.cart-header .cart-content p:nth-child(3) {
+    margin: 15px;
+    color: brown;
+}
+
+.wrapper {
+    width: 100%;
+    height: 450px;
+    max-width: 600px;
+    background-color: darkcyan;
+    border-radius: 25px;
+    margin: 25px auto;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.wrapper .inputField {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom:5px ;
+}
+
+.inputField input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.inputField button {
+    width: 10%;
+    height: 100%;
+    outline: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1px;
+    /* pointer-events: none; */
+    opacity: 0.6;
+}
+
+.inputField button:hover {
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+.inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .select-todo {
+    display: block;
+    float: right;
+    width: 100px;
+    outline: none;
+    border-radius: 5px;
+    background-color: azure;
+    color: darkcyan;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.wrapper .todoList {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.wrapper .todoList li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    height: 40px;
+    background-color: azure;
+    color: darkcyan;
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    letter-spacing: 1.6;
+    cursor: default;
+    overflow: hidden;
+    font-size: 14px;
+}
+.ds{
+    display: none;
+}
+.complete {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.wrapper .todoList li i {
+    position: absolute;
+    right: -75px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transform: all 0.3 ease;
+    font-size: 18px;
+}
+
+.todoList .Input {
+    display: none;
+}
+
+.todoList .Input input.active {
+    display: inline-block;
+}
+
+.todoList li .icon2 i {
+    padding-left: 35px;
+}
+
+.todoList .icon-finish i {
+    padding-left: 80px;
+}
+
+.todoList li:hover i {
+    right: 0px;
+}
+
+.wrapper .footer-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.wrapper .footer-card span {
+    font-size: 20px;
+    color: rgba(1, 17, 17, 0.5);
+    font-size: 16px;
+}
+
+.wrapper .footer-card button {
+    border: none;
+    outline: none;
+    background-color: brown;
+    color: rgba(1, 17, 17, 0.5);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 15px;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.footer-card button:hover {
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+.footer-card button.active {
+    pointer-events: auto;
+    opacity: 1;
+}

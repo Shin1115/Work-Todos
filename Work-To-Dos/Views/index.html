@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Work To-Dos</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="cart-header">
+            <h1 class="cart-title">WORK TO-DOS</h1>
+            <div class="cart-content">
+                <p class="content-1">Enter text into the input field to add items your list </p>
+                <p>Click the <span class="fas fa-check-circle"></span> icon to mark it as complete</p>
+                <p>Click the <span class="fas fa-trash"></span> icon to remove the item from your list</p>
+                <p>Click the <span class="fas fa-edit"></span> icon on the list to select edit and edit</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="inputField" id="inputField">
+                <input class="item" type="text" placeholder="New item... ">
+                <button class="fas fa-share-square" id="btn-todo"></button> <button id="editButton">Sua</button>
+            </div>
+                <select class="select-todo">
+                    <option value="all">All</option>
+                    <option value="complete-side">Complete</option>
+                    <option value="incomplete">Incomplete</option>
+                </select>
+            <ul class="todoList" id="todoList">
+            </ul>
+            <div class="footer-card">
+                <button>Clear all</button>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/scrip.js"></script>
+</body>
+
+</html>
